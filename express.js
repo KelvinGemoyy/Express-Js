@@ -24,7 +24,7 @@ app.get('/contact', (req, res) => {
 })
 
 app.use('/',(req,res) => {
-    res.send('Maaf atuh web yang kamu cari teh gk ada sayang🤤');
+    res.send('404 Error Not Found!');
 });
 
 app.listen(port, () => {
