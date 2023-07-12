@@ -6,8 +6,14 @@ const port = 3000
 
 
 app.get('/', (req, res) => {
-  res.send('Hai Kelvin,selamat website kamu telah berjalan😎')
-})
+  // res.send('Hai Kelvin,selamat website kamu telah berjalan😎')
+  // res.json({
+  //   nama:'Thirza Nur Zanetta',
+  //   email:'thirzanetya@gmail.com',
+  //   noHP:'08512982927',
+  // });
+  res.sendFile('./index.html', {root:__dirname});
+});
 
 app.get('/about', (req, res) => {
   res.send('Ini adalah halaman about kamu😎')
